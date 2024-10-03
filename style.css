@@ -43,7 +43,7 @@ img {
   width: 100%;
   height: 93vh;
   position: relative;
-  background: url('img/background.jpg') no-repeat center center/cover;
+  background: url('img/background2.jpg') no-repeat center center/cover;
 }
 
 .showcase-top {
@@ -52,5 +52,86 @@ img {
 }
 
 .showcase-top img {
-  width: 170px;
+  width: 200px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-top a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-content {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 9rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1.3rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
+.btn:hover {
+  /* opacity: 0.9; */
+  background: #bb040d;
+  color: #fff;
+}
+
+.btn-rounded {
+  border-radius: 7px;
+}
+
+.email-input {
+  background: rgba(25, 25, 25, 0.447);
+  color: rgb(149, 149, 149);
+  border-radius: 5px;
+  height: 85px;
+  width: 500px;
+  display: inline;
+  font-size: 21px;
+  margin-right: 5px;
+  padding-left: 15px;
+  font-weight: 500;
+}
+
+.btn-xl {
+  font-size: 1.7rem;
+  padding: 1.5rem 2.1rem;
+  /* text-transform: uppercase; */
+  display: inline;
+  font-family: 'Cabin', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  fill: currentColor;
+  line-height: 1;
+}
+
+.btn-lg {
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
+  /* text-transform: uppercase; */
 }
