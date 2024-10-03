@@ -41,9 +41,10 @@ img {
 
 .showcase {
   width: 100%;
-  height: 93vh;
+  height: 98vh;
   position: relative;
-  background: url('img/background2.jpg') no-repeat center center/cover;
+  background: url('img/background2.jpg') no-repeat top center/cover;
+  background-position-y: -30px;
 }
 
 .showcase-top {
@@ -54,15 +55,15 @@ img {
 .showcase-top img {
   width: 200px;
   position: absolute;
-  top: 60%;
-  left: 50%;
+  top: 67%;
+  left: 14.5%;
   transform: translate(-50%, -50%);
 }
 
 .showcase-top a {
   position: absolute;
-  top: 50%;
-  right: 0;
+  top: 67%;
+  right: 7%;
   transform: translate(-50%, -50%);
 }
 
@@ -77,20 +78,62 @@ img {
   margin-top: 9rem;
 }
 
+.showcase-content h1 {
+  font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu,
+    sans-serif;
+  text-align: center;
+  font-weight: 800;
+  /* font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900; */
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-size: 76px;
+  margin-top: 70px;
+  /* letter-spacing: -2px; */
+}
+
+.showcase-content p {
+  font-family: 'Cabin', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  color: #fff;
+}
+
+.showcase-content .price {
+  font-size: 1.7em;
+  margin-top: 15px;
+}
+
+.showcase-content .ready-ps {
+  font-size: 1.4em;
+  font-weight: 100;
+  margin-top: 30px;
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
   background: var(--primary-color);
   color: #fff;
-  padding: 0.4rem 1.3rem;
-  font-size: 1.3rem;
   text-align: center;
   border: none;
   cursor: pointer;
-  margin-right: 0.5rem;
-  outline: none;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
   border-radius: 2px;
+  font-family: 'Cabin', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+.btn-sign-in {
+  padding: 0.4rem 1.3rem;
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
 }
 
 .btn:hover {
@@ -103,31 +146,42 @@ img {
   border-radius: 7px;
 }
 
-.email-input {
-  background: rgba(25, 25, 25, 0.447);
-  color: rgb(149, 149, 149);
-  border-radius: 5px;
-  height: 85px;
-  width: 500px;
+.get-started {
   display: inline;
-  font-size: 21px;
+  margin-top: 10px;
+}
+
+.email-input {
+  background: rgba(54, 54, 54, 0.7);
+  color: rgb(220, 220, 220);
+  border-radius: 5px;
+  height: 75px;
+  width: 480px;
+  /* display: inline; */
+  font-size: 20px;
   margin-right: 5px;
   padding-left: 15px;
   font-weight: 500;
+  border: 1px solid rgba(148, 148, 148, 0.778);
 }
 
-.btn-xl {
-  font-size: 1.7rem;
-  padding: 1.5rem 2.1rem;
-  /* text-transform: uppercase; */
-  display: inline;
+.email-input::placeholder {
+  color: #999;
   font-family: 'Cabin', sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
+}
+
+.btn-xl {
+  font-size: 1.97rem;
+  letter-spacing: 1px;
+  padding: 0.87rem 0rem;
+  /* display: inline; */
   fill: currentColor;
-  line-height: 1;
+  vertical-align: top;
+  width: 275px;
 }
 
 .btn-lg {
