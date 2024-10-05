@@ -1,3 +1,7 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Header */
 :root {
   --primary-color: #e50914;
   --dark-color: #000;
@@ -67,11 +71,21 @@ img {
 }
 
 .showcase-top img {
-  width: 200px;
+  width: 12.5rem;
   position: absolute;
   top: 67%;
   left: 14.5%;
   transform: translate(-50%, -50%);
+}
+
+.showcase-top .select-box {
+  width: 100px;
+}
+
+.showcase-top .select-box > select {
+  font-size: 1rem;
+  width: 100px;
+  height: 30px;
 }
 
 .showcase-top a {
@@ -97,22 +111,20 @@ img {
   font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu,
     sans-serif;
   text-align: center;
-  font-weight: 800;
-  /* font-family: 'Open Sans', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900; */
+  font-weight: 800;
   font-style: normal;
-  font-variation-settings: 'wdth' 100;
-  font-size: 76px;
-  margin-top: 70px;
+  font-size: 4.75rem;
+  margin-top: 4.375rem;
   /* letter-spacing: -2px; */
 }
 
 .showcase-content p {
   color: #fff;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
   line-height: 1.25;
@@ -120,18 +132,18 @@ img {
 
 .showcase-content .price {
   font-size: 1.7em;
-  margin-top: 17px;
+  margin-top: 1rem;
 }
 
 .showcase-content .ready-ps {
   font-size: 1.38em;
-  font-weight: 100;
-  margin-top: 35px;
+  font-weight: 400;
+  margin-top: 2.1rem;
 }
 
 .showcase-content .get-started {
   display: inline;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 /* Tabs */
@@ -228,7 +240,7 @@ img {
 
 /* Input */
 .email-input {
-  background: rgba(54, 54, 54, 0.7);
+  background: rgba(24, 24, 24, 0.7);
   color: rgb(220, 220, 220);
   border-radius: 5px;
   height: 75px;
@@ -242,10 +254,11 @@ img {
 }
 
 .email-input::placeholder {
-  color: #999;
+  color: rgb(157, 157, 157);
   font-family: 'Cabin', sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
+  font-size: 1.4rem;
 }
