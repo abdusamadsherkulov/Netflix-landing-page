@@ -1,5 +1,6 @@
 :root {
   --primary-color: #e50914;
+  --dark-color: #000;
 }
 
 * {
@@ -56,7 +57,7 @@ img {
   height: 100%;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
-  box-shadow: inset 90px 40px 250px #000000, inset -0px -190px 250px #000000;
+  box-shadow: inset 90px 40px 250px #000000, inset -90px -220px 280px #000000;
 }
 
 .showcase-top {
@@ -128,6 +129,53 @@ img {
   margin-top: 35px;
 }
 
+.showcase-content .get-started {
+  display: inline;
+  margin-top: 10px;
+}
+
+/* Tabs */
+.tabs {
+  background: var(--dark-color);
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tabs p {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.tabs .container > div {
+  margin: 1.5rem 5rem;
+}
+
+.tabs .container > div:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.tab-border {
+  border-bottom: var(--primary-color) 4px solid;
+}
+
+/* Container */
+.container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -146,9 +194,10 @@ img {
 }
 
 .btn-sign-in {
-  padding: 0.4rem 1.3rem;
+  padding: 0.5rem 1.2rem;
   font-size: 1.3rem;
   margin-right: 0.5rem;
+  font-weight: 700;
 }
 
 .btn:hover {
@@ -161,11 +210,23 @@ img {
   border-radius: 7px;
 }
 
-.get-started {
-  display: inline;
-  margin-top: 10px;
+.btn-xl {
+  font-size: 1.97rem;
+  letter-spacing: 1px;
+  padding: 1.15rem 0rem;
+  /* display: inline; */
+  fill: currentColor;
+  vertical-align: top;
+  width: 275px;
 }
 
+.btn-lg {
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
+  /* text-transform: uppercase; */
+}
+
+/* Input */
 .email-input {
   background: rgba(54, 54, 54, 0.7);
   color: rgb(220, 220, 220);
@@ -187,20 +248,4 @@ img {
   font-weight: 500;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
-}
-
-.btn-xl {
-  font-size: 1.97rem;
-  letter-spacing: 1px;
-  padding: 0.87rem 0rem;
-  /* display: inline; */
-  fill: currentColor;
-  vertical-align: top;
-  width: 275px;
-}
-
-.btn-lg {
-  font-size: 1rem;
-  padding: 0.8rem 1.3rem;
-  /* text-transform: uppercase; */
 }
