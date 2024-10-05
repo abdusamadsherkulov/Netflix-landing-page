@@ -47,9 +47,22 @@ img {
   background-position-y: -30px;
 }
 
+.showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 90px 40px 250px #000000, inset -0px -190px 250px #000000;
+}
+
 .showcase-top {
   position: relative;
   height: 90px;
+  z-index: 2;
 }
 
 .showcase-top img {
@@ -76,6 +89,7 @@ img {
   align-items: center;
   text-align: center;
   margin-top: 9rem;
+  z-index: 2;
 }
 
 .showcase-content h1 {
@@ -94,23 +108,24 @@ img {
 }
 
 .showcase-content p {
+  color: #fff;
   font-family: 'Cabin', sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
-  color: #fff;
+  line-height: 1.25;
 }
 
 .showcase-content .price {
   font-size: 1.7em;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 .showcase-content .ready-ps {
-  font-size: 1.4em;
+  font-size: 1.38em;
   font-weight: 100;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 /* Buttons */
@@ -156,7 +171,7 @@ img {
   color: rgb(220, 220, 220);
   border-radius: 5px;
   height: 75px;
-  width: 480px;
+  width: 485px;
   /* display: inline; */
   font-size: 20px;
   margin-right: 5px;
